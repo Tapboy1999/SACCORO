@@ -1,0 +1,32 @@
+RewriteEngine On //bat che do rewrite tren trang
+RewriteCond %[REQUEST_FILENAME] !-f
+#//dieu kien rewrite theo ten file
+RewriteCond %[REQUEST_FILENAME] !-d
+#//dieu kien rewrite theo ten thu muc
+#khai bao cac rule de rewrite
+#cu phap:
+#Trang chủ:
+RewriteRule "trang-chu.html" "index.php?ctr=home&act=index"
+#Đăng nhập
+RewriteRule "dang-nhap.html" "index.php?ctr=user&act=login"
+#Đăng ký:
+RewriteRule "dang-ky.html" "index.php?ctr=user&act=create"
+#Gio hang:
+RewriteRule "gio-hang-cua-ban.html" "index.php?ctr=cart&act=index"
+#quản lý tài khoản
+RewriteRule "quan-ly-tai-khoan.html" "index.php?ctr=user&act=update"
+#Thanh Toán:
+RewriteRule "thanh-toan.html" "index.php?ctr=payment&act=index"
+#Danh mục sản phẩm:
+RewriteRule "^danh-muc-(.*)-([0-9]+).html$" "index.php?ctr=product&act=list&id=$2"
+RewriteRule "^(.*)/([0-9]+).html$" "index.php?ctr=product&act=mylist&id=$2"
+#khai bao rule cho xoa san pham khoi gio hang 
+#xoa-san-pham/4.html
+RewriteRule xoa-san-pham/([0-9]{1,}).html index.php?ctr=cart&act=delete&id=$1
+#don hang cua toi:
+RewriteRule don-hang-cua-toi.html index.php?ctr=user&act=myOrder
+RewriteRule order-success.html index.php?ctr=payment&act=thank
+RewriteRule order-online.html index.php?ctr=payment&act=online
+RewriteRule kenh-nguoi-ban.html index.php?ctr=product&act=myProduct
+RewriteRule kenh-nguoi-ban-them-moi.html index.php?ctr=product&act=create
+

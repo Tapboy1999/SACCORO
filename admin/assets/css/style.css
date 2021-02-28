@@ -1,0 +1,126 @@
+h1,h2,h3,h4{
+	margin: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/* ===============Login================== */
+
+.login-bg{
+	background-image: url('../images/lg-bg.jpg');
+    background-size: cover;
+    padding: 150px 0px 300px 0px;
+    display: block;
+    margin:  0px auto;
+}
+.login-bg .login-body{
+	background-color: #ffffff;
+	width: 30%;
+	margin:  0px auto;
+}
+.login-bg .login-body .login-heading{
+	background-color: #67D3E0;
+	padding-top:  20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+	margin-bottom: 50px;
+}
+.login-bg .login-body .login-infor{
+	padding: 20px 30px 50px 30px;
+	background-color: #ffffff;
+
+}
+.login-bg .login-body .login-infor input[type='text'],.login-bg .login-body .login-infor input[type='password']{
+	width: 100%;
+	border: 1px solid #a8a8a8;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	padding-bottom: 10px; 
+	padding-top: 20px; 
+	color: #a8a8a8;
+	margin: 0px;
+	font-size: 15px
+}
+.login-bg .login-body .login-infor .forgot-top-gird{
+	
+	margin-top: 40px;
+}
+.login-bg .login-body .login-infor .forgot-top-gird .remember{
+	float: left;
+	display: block;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	color: #67D3E0;
+}
+.login-bg .login-body .login-infor .forgot-top-gird .forgot a{
+	float: right;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	color: #67D3E0;
+
+}
+.login-bg .login-body .login-infor .forgot-top-gird .forgot :hover{
+	color: #fd5c63;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+
+}
+.login-bg .login-body .login-infor input[type='submit']{
+	width: 100%;
+	margin-top: 30px;
+	color: black;
+	font-size: 18px;
+	border: 0px;
+	outline: none;
+	padding: 10px 10px;
+	background-color:  #fd5c63;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+.login-bg .login-body .login-infor input[type='submit']:hover{
+	background-color: #67D3E0;
+	color: #ffffff;
+}
+.login-bg .login-body .login-infor .signup-text{
+	text-align:  center;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+}
+.login-bg .login-body .login-infor .signup-text a{
+	color: #67D3E0;
+}
+.login-bg .login-body .login-infor .signup-text a:hover{
+	color: #fd5c63;
+
+}
+@media screen and (max-width: 1000px) {
+  .login-bg .login-body{
+  	width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+	.login-bg{
+		padding: 0px auto;
+	}
+
+  	.login-bg .login-body{
+
+  		width: 90%;
+  	}
+  	.login-bg .login-body .login-infor .forgot-top-gird .forgot a{
+  		float: left;
+  	}
+
+}
